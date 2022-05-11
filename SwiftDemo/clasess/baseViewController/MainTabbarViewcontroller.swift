@@ -24,7 +24,7 @@ class MainTabbarViewcontroller: UITabBarController {
     func configVC(vc : UIViewController,title : String,image : String,selectImageName : String) -> MainNavigationController{
         let nav = MainNavigationController(rootViewController: vc)
         vc.title = title
-        nav.tabBarItem.image = UIImage(named: image)
+        nav.tabBarItem.image = UIImage(named: image)!.withRenderingMode(.alwaysOriginal)
         nav.tabBarItem.selectedImage = UIImage(named: selectImageName)!.withRenderingMode(.alwaysOriginal)
         nav.navigationBar.backgroundColor = UIColor.white
         return nav
