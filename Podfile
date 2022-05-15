@@ -7,5 +7,6 @@ target 'SwiftDemo' do
 
 pod 'Alamofire'
 pod 'SnapKit'
+pod 'SwiftyJSON', '~> 4.0'
 
 end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401B3CCF2830F5C300C4B5A9 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B3CCE2830F5C300C4B5A9 /* HomeModel.swift */; };
 		40547D5A2821527B00549EB8 /* configTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40547D592821527B00549EB8 /* configTool.swift */; };
 		40547D5E28215A1F00549EB8 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40547D5D28215A1F00549EB8 /* MainNavigationController.swift */; };
 		4078567F281BDB7500590892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078567E281BDB7500590892 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		401B3CCE2830F5C300C4B5A9 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		40547D592821527B00549EB8 /* configTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configTool.swift; sourceTree = "<group>"; };
 		40547D5D28215A1F00549EB8 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		4078567B281BDB7500590892 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		401B3CCD2830F59A00C4B5A9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				401B3CCE2830F5C300C4B5A9 /* HomeModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		40547D53282151FC00549EB8 /* appDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 		40547D572821523600549EB8 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				401B3CCD2830F59A00C4B5A9 /* model */,
 				407856B5281BE32600590892 /* HomeVC.swift */,
 				407856BB281BEFBE00590892 /* HomeDetailVC.swift */,
 			);
@@ -209,7 +220,6 @@
 				A1E80633BBB12DFB602CF672 /* Pods-SwiftDemo.debug.xcconfig */,
 				5F931BA5D532BBED57668CA4 /* Pods-SwiftDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -398,6 +408,7 @@
 			files = (
 				40547D5E28215A1F00549EB8 /* MainNavigationController.swift in Sources */,
 				407856B4281BE2FC00590892 /* BaseViewController.swift in Sources */,
+				401B3CCF2830F5C300C4B5A9 /* HomeModel.swift in Sources */,
 				40785689281BDB7500590892 /* SwiftDemo.xcdatamodeld in Sources */,
 				407856BC281BEFBE00590892 /* HomeDetailVC.swift in Sources */,
 				40547D5A2821527B00549EB8 /* configTool.swift in Sources */,
