@@ -24,6 +24,7 @@ class HomeVC: BaseViewController {
         btn = UIButton(type: .custom)
         btn.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
         btn.setTitle("dd", for: .normal)
+        btn.setImage(UIImage(systemName: "phone"), for: .normal)
         btn.backgroundColor = UIColor.red
         btn.addTarget(self, action: #selector(click), for: .touchUpInside)
         self.view.addSubview(btn)
@@ -52,14 +53,14 @@ class HomeVC: BaseViewController {
     }
     
     @objc func click(){
-//        self.navigationController?.pushViewController(HomeDetailVC(), animated: true)
-        let url = URL(string: "lsj://?token=12dn&id=32")
-        if UIApplication.shared.canOpenURL(url!) {
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url!)
-            } else {
-                // Fallback on earlier versions
-            }
-        }
+        self.navigationController?.pushViewController(HomeDetailVC(), animated: true)
+//        let url = URL(string: "lsj://?token=12dn&id=32")
+//        if UIApplication.shared.canOpenURL(url!) {
+//            if #available(iOS 10.0, *) {
+//                UIApplication.shared.open(url!)
+//            } else {
+//                // Fallback on earlier versions
+//            }
+//        }
     }
 }
